@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.projektnikriptografija.controllers.AlgorithmsChoosingController">
+   <children>
+      <ImageView fitHeight="390.0" fitWidth="487.0" layoutX="-1.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.5;">
+         <image>
+            <Image url="@Pozadina.jpg" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="algoritamChoice" layoutX="91.0" layoutY="44.0" onMouseClicked="#showAlgorithms" prefHeight="30.0" prefWidth="206.0" />
+      <Text fill="#0d0143" layoutX="91.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERT ENCRYPTION ALGORITHM">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#0d0143" layoutX="91.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERT TEXT TO ENCRYPT" wrappingWidth="240.99566650390625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textField" layoutX="91.0" layoutY="120.0" prefHeight="30.0" prefWidth="206.0" promptText="Text" />
+      <TextField fx:id="keyField" layoutX="91.0" layoutY="185.0" prefHeight="30.0" prefWidth="206.0" promptText="Key" />
+      <Text fill="#0d0143" layoutX="91.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERT ENCRYPTION KEY" wrappingWidth="240.99566650390625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="encryptedField" layoutX="93.0" layoutY="322.0" prefHeight="40.0" prefWidth="253.0" />
+      <Text fill="#0d0143" layoutX="100.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENCRYPTED" wrappingWidth="240.99566650390625">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="encryptButton" layoutX="388.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#onEncryptButton" text="Encrypt" />
+      <TextField fx:id="numberRowsField" layoutX="91.0" layoutY="244.0" prefHeight="30.0" prefWidth="206.0" promptText="Number of rows" />
+      <Text fill="#0d0143" layoutX="87.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INSERT NUMBER OF ROWS FOR RAIL FENCE" wrappingWidth="311.3956298828125">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="history" layoutX="360.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#onHistoryButton" style="-fx-background-color: purple;" text="Encryption history" textFill="#dedfd0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
